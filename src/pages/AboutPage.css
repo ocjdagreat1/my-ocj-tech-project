@@ -1,0 +1,63 @@
+.about-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/AboutImage.jpeg") center/cover no-repeat;
+  min-height: 80vh;
+  padding: 100px 0;
+}
+.hero-highlight{
+  color:#FF5733;
+}
+
+.team-card img {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.contact-card {
+  opacity: 0;
+  transform: translateY(40px);
+  min-height: 250px;
+  padding: 2rem;
+}
+
+/* Scroll Down */
+.contact-card.animate-up {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* Scroll Up */
+.contact-card.animate-down {
+  animation: fadeDown 0.8s ease forwards;
+}
+
+/* Fade + slide up */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade + slide down */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover effect */
+.contact-card:hover {
+  background-color: aliceblue;
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}

@@ -1,0 +1,29 @@
+
+.carousel{
+  padding-top: 10px;
+}
+.carousel-item img {
+  height: 100vh !important; 
+  width: 100%;                
+  object-fit:fill;         
+}
+
+
+.carousel-caption {
+  top: 60%;
+  transform: translateY(-50%);
+  bottom: auto; 
+  background: rgba(0, 0, 0, 0.5); 
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.carousel-caption h3,
+.carousel-caption p {
+  color: rgb(229, 229, 208) !important; 
+  margin:0;
+  
+}
+.carousel-caption p {
+  font-size: 20px;
+}
