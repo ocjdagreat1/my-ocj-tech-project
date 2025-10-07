@@ -9,7 +9,7 @@ function About() {
     <div id="about-ocj-tech">
   <h2>About <span style={{color:"#FF5733"}}>OCJ Tech</span></h2>
   <p>
-    At OCJ Tech, We are compasion about innovation and technology. 
+    At OCJ Tech, We are passionate about innovation and technology. 
     Our mission is to provide high-quality digital solutions,<br /> including 
     web design, software development, and tech training programs that 
     empower individuals and businesses in the digital world. <br />
