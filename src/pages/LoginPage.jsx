@@ -28,7 +28,7 @@ const LoginPage = () => {
         localStorage.setItem("token", data.token);
 
         // Redirect to dashboard or protected page
-        navigate("/dashboard");
+        navigate("/HomePage");
       }
     } catch (err) {
       setMessage("An error occurred. Please try again.");
