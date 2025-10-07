@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import "./LoginPage.css";
 import authy from "../assets/authy.svg"; 
+import { Link } from "react-router-dom";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -86,7 +87,7 @@ const LoginPage = () => {
           {message && <p style={{ color: "red", marginTop: "10px" }}>{message}</p>}
 
           <p>
-            Don’t have an account? <a href="/register">Signup</a> here
+            Don’t have an account? <Link to ="/register">Signup</Link> here
           </p>
         </form>
 
