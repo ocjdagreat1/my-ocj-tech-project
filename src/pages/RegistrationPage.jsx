@@ -23,7 +23,7 @@ const RegistrationPage = () => {
     }
 
     try {
-      const res = await fetch("http://localhost/backend/register.php", {
+      const res = await fetch("http://localhost/react-project/register.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
