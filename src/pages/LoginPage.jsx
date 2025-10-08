@@ -87,7 +87,7 @@ const LoginPage = () => {
           {message && <p style={{ color: "red", marginTop: "10px" }}>{message}</p>}
 
           <p>
-            Don’t  an account? <Link to ="/register">Signup here</Link> 
+            Don’t have an account? <Link to ="/register">Signup here</Link> 
           </p>
         </form>
 
