@@ -22,7 +22,7 @@ function IndividualIntervalsExample() {
         </Carousel.Caption>
       </Carousel.Item>
 
-      <Carousel.Item interval={200}>
+      <Carousel.Item interval={400}>
         <img
           className="d-block w-100"
           src={computer5}
@@ -32,9 +32,9 @@ function IndividualIntervalsExample() {
           <h3>Data Analysis</h3>
           <p>Data Analysis courses are made easier with our advanced data analytic tools.</p>
         </Carousel.Caption>
-      </Carousel.Item>
+      </Carousel.Item >
 
-      <Carousel.Item>
+      <Carousel.Item interval={300}>
         <img
           className="d-block w-100"
           src={computer6}
@@ -46,7 +46,7 @@ function IndividualIntervalsExample() {
         </Carousel.Caption>
       </Carousel.Item>
 
-       <Carousel.Item>
+       <Carousel.Item interval={200}>
         <img
           className="d-block w-100"
           src={photo3}
