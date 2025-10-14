@@ -12,6 +12,8 @@ import card3 from "../assets/card3.jpg"
 import card7 from "../assets/card7.jpg"
 import card9 from "../assets/card9.jpg"
 import card10 from "../assets/card10.jpg"
+import OCJ from"../assets/Ocj.jpg"
+import { style } from "framer-motion/client";
 
 
 
@@ -157,7 +159,7 @@ function About() {
     <Row className="g-4">
       <Col md={4} sm={6} xs={12}>
         <Card className="team-card shadow-sm h-100">
-          <Card.Img variant="top" src={card4} />
+          <Card.Img variant="top" src={OCJ} />
           <Card.Body className="text-center">
             <Card.Title>Opara Justine</Card.Title>
             <Card.Text>Founder & Lead Developer</Card.Text>

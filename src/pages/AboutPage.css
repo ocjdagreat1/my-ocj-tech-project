@@ -16,7 +16,7 @@
 
 .team-card img {
   height: 250px;
-  object-fit: cover;
+  object-fit:cover;
   border-radius: 10px;
 }
 
