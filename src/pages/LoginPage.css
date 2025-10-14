@@ -1,4 +1,4 @@
-/* Background slideshow with transition */
+/* 🔹 Background slideshow with smooth transition */
 @keyframes backgroundFade {
   0% {
     background-image: url("../assets/futuristic2.jpeg");
@@ -21,9 +21,10 @@
   background-size: cover;
   background-position: center;
   animation: backgroundFade 20s infinite alternate ease-in-out;
+  flex-wrap: wrap; /* allow wrapping for responsiveness */
 }
 
-/* Left Side */
+/* 🔹 Left Side */
 .welcome-text {
   max-width: 45%;
 }
@@ -36,7 +37,7 @@
 .welcome-text h2 {
   font-size: 3rem;
   font-weight: 800;
-  color:  #FF5733; 
+  color: #ff5733;
 }
 
 .welcome-text p {
@@ -47,29 +48,30 @@
 .join-btn {
   padding: 10px 25px;
   border: none;
-  background:#002B5B;
+  background: #002b5b;
   color: #fff;
   font-size: 1.1rem;
   font-weight: bold;
   border-radius: 10px;
   cursor: pointer;
+  transition: background 0.3s;
 }
 
-/* Right Side - Login Box */
+.join-btn:hover {
+  background: #ff5733;
+}
 
-
-
+/* 🔹 Right Side - Login Box */
 .logo-section {
   display: flex;
-  align-items: center;  
-  justify-content: center; 
-  gap: 10px;             
-  margin-bottom:20px;
-  
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 .logo {
-  width: 50px;   /* smaller logo */
+  width: 50px;
   height: 50px;
   object-fit: contain;
 }
@@ -79,19 +81,20 @@
   font-weight: bold;
   color: white;
 }
+
 .login-box {
   background: rgba(0, 0, 0, 0.7);
   padding: 30px;
   border-radius: 15px;
-  height: 82vh;
-  width: 320px;
-  margin-top:70px ;
+  height: auto;
+  width: 350px;
+  margin-top: 70px;
   text-align: center;
 }
 
 .login-box h3 {
   background: white;
-  color: #FF5733;
+  color: #ff5733;
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -108,28 +111,19 @@
   outline: none;
 }
 
-.login-btn {
-  width: 100%;
-  padding: 12px;
-  background: goldenrod;
-  border: none;
-  font-weight: bold;
-  border-radius: 10px;
-  margin-top: 15px;
-  cursor: pointer;
-}
-
 .login-box p {
   margin-top: 15px;
   font-size: 0.9rem;
 }
 
 .login-box a {
-  color:red;
+  color: red;
   font-weight: bold;
+  text-decoration: none;
 }
-.login-box a:hover{
-  color:#fff;
+
+.login-box a:hover {
+  color: #fff;
 }
 
 .social-login {
@@ -140,7 +134,65 @@
   font-size: 1.5rem;
   margin: 0 8px;
   cursor: pointer;
+  transition: color 0.3s;
 }
-.icons i:hover{
-color: #FF5733;
+
+.icons i:hover {
+  color: #ff5733;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 992px) {
+  .login-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .welcome-text {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .welcome-text h1,
+  .welcome-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .welcome-text p {
+    font-size: 1rem;
+  }
+
+  .login-box {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .welcome-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .welcome-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .welcome-text p {
+    font-size: 0.95rem;
+  }
+
+  .join-btn {
+    padding: 8px 20px;
+    font-size: 1rem;
+  }
+
+  .login-box {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+  }
 }
