@@ -5,6 +5,8 @@ import "./LoginPage.css";
 import authy from "../assets/authy.svg"; 
 import { Link } from "react-router-dom";
 
+
+
 const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -87,7 +89,7 @@ const LoginPage = () => {
           {message && <p style={{ color: "red", marginTop: "10px" }}>{message}</p>}
 
           <p>
-            Don’t have an account? <Link to ="/register">Signup here</Link> 
+            Don’t have an account? <Link to ="/RegistrationPage">Signup here</Link> 
           </p>
         </form>
 

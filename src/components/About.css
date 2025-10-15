@@ -1,44 +1,113 @@
+
+/* 🔹 About Section Container */
 #about-ocj-tech { 
   background-image: url(../assets/download5.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-      width:100vw;
-      height: 100vh;
-      margin:auto;
-      padding:70px 30px;
-     border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(242, 227, 227, 0.1);
-      font-family: Arial, sans-serif;
-      color: #333;
-      text-align:center;
-    }
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  margin: auto;
+  padding: 70px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(242, 227, 227, 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+  overflow: hidden; /* Prevent content overflow */
+}
 
-    #about-ocj-tech h2 {
-      font-size: 28px;
-      color: #fff;
-      margin-bottom: 15px;
-      text-align: center;
-    }
-    #about-ocj-tech h2:hover{
-  color:#FF5733;
-      
-    }
+/* 🔹 Heading */
+#about-ocj-tech h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 15px;
+  text-align: center;
+}
 
-    #about-ocj-tech p {
-      line-height: 1.8;
-      font-size: 16px;
-      margin-bottom: 15px;
-      text-align: justify;
-      padding-left: 100px;
-  color:#002B5B ; 
-      
-    }
-    #about-ocj-tech .btn{
-      background-color:#002B5B ;
-      border:none;
-    }
-    #about-ocj-tech .btn:hover{
-      background-color: green;
-    }
+#about-ocj-tech h2:hover {
+  color: #FF5733;
+}
 
-    
+/* 🔹 Paragraph Styling */
+#about-ocj-tech p {
+  line-height: 1.8;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  text-align: justify;
+  padding-left: 60px;
+  padding-right: 60px;
+  color: #002B5B;
+}
+
+/* 🔹 Read More Button */
+#about-ocj-tech .btn {
+  background-color: #002B5B;
+  border: none;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 10px 25px;
+  transition: background 0.3s;
+}
+
+#about-ocj-tech .btn:hover {
+  background-color: green;
+}
+
+/* 🔹 Collapsible Text Container */
+#example-collapse-text {
+  margin-top: 20px;
+  padding: 0 60px;
+  color: #002B5B;
+  text-align: justify;
+  word-wrap: break-word;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+/* ✅ Responsive Design */
+
+/* Tablets */
+@media (max-width: 992px) {
+  #about-ocj-tech {
+    padding: 60px 25px;
+  }
+
+  #about-ocj-tech p,
+  #example-collapse-text {
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 0.95rem;
+  }
+
+  #about-ocj-tech h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 576px) {
+  #about-ocj-tech {
+    padding: 50px 15px;
+    min-height: auto;
+  }
+
+  #about-ocj-tech h2 {
+    font-size: 1.6rem;
+  }
+
+  #about-ocj-tech p,
+  #example-collapse-text {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left; /* Easier to read on small screens */
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  #about-ocj-tech .btn {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
