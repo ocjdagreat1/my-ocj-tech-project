@@ -1,0 +1,13 @@
+.digital-container{
+  width: 100%;
+  background-image: url("../assets/photo2.jpeg");
+   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 7%;
+  text-align: center;
+  height: 100vh;
+}
+.digital-container h1{
+  color: red;
+}

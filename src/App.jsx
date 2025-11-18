@@ -8,6 +8,8 @@ import ContactPage  from './pages/ContactPage'
 import Footer from  './components/Footer'
 import RegistrationPage from "./pages/RegistrationPage";
 import LoginPage from "./pages/LoginPage";
+import FullStack from "./pages/FullStack";
+import Digital from "./pages/Digital";
 
 function App() {
   
@@ -22,6 +24,8 @@ function App() {
     <Route path="/ContactPage" element={<ContactPage/>}/>
     <Route path="/RegistrationPage" element={<RegistrationPage/>}/>
     <Route path="/LoginPage" element={<LoginPage/>}/>
+    <Route path="/FullStack" element={<FullStack/>}/>
+    <Route path="/digital" element={<Digital/>}/>
   </Routes>
   <Footer/>
 

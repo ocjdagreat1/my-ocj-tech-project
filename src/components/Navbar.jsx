@@ -37,12 +37,12 @@ function NavScrollExample() {
             <Nav.Link as ={Link} to="/" >Home</Nav.Link>
             <Nav.Link as={Link} to ="/AboutPage">About</Nav.Link>
             <NavDropdown title="Services" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Fullstack Software Development</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to ="/FullStack">Fullstack Software Development</NavDropdown.Item>
               <NavDropdown.Item href="#action4">Data Analysis</NavDropdown.Item>
               <NavDropdown.Item href="#action4">Web Design</NavDropdown.Item>
               <NavDropdown.Divider />
         <NavDropdown.Item href="#action5">Video Editing</NavDropdown.Item>
-        <NavDropdown.Item href="#action5">Digital Marketing</NavDropdown.Item>
+        <NavDropdown.Item as={Link} to ="/digital">Digital Marketing</NavDropdown.Item>
         <NavDropdown.Item href="#action5">Graphics Design</NavDropdown.Item>
             </NavDropdown>
            <Nav.Link as ={Link} to ="/ContactPage">Contact</Nav.Link>

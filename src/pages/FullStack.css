@@ -1,0 +1,23 @@
+.fullstack-container{
+  width: 100%;
+  background-image: url("../assets/webdev1.jpg");
+   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 7%;
+  text-align: center;
+  height: 100vh;
+}
+.fullstack-container h1{
+  color: red;
+}
+.fullstack-container p{
+  color: aliceblue;
+}
+.fullstack-container ol li{
+  gap: 2px;
+  justify-items: center;
+  list-style-type: decimal;
+  line-height:2;
+  color:yellow;
+}
