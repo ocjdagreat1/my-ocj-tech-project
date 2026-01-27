@@ -54,7 +54,7 @@ const Footer = () => {
           </Row>
           <Row>
             <Col className="text-center">
-              <p className="mb-0">&copy; {new Date().getFullYear()} <span className="footer-highlight">OCJ TECH</span> . All Rights Reserved.</p>
+              <p className="mb-0">&copy; {new Date().getFullYear()} <span className="footer-highlight">OCJ TECH</span> . All Rights Reserved.Powered by Opara Chibuike Justine</p>
             </Col>
             <div className="socials">
       <a href="#"><i class="fa-brands  fa-facebook"></i></a>
