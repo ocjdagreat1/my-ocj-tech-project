@@ -10,23 +10,26 @@
     background-image: url("../assets/images2.jpeg");
   }
 }
-
 .login-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
   padding: 40px;
+  padding-top: 120px; /* ✅ pushes content below navbar */
   color: white;
   background-size: cover;
   background-position: center;
   animation: backgroundFade 20s infinite alternate ease-in-out;
-  flex-wrap: wrap; /* allow wrapping for responsiveness */
+  gap: 40px;
 }
+
+
 
 /* 🔹 Left Side */
 .welcome-text {
-  max-width: 45%;
+  flex: 1;
+  max-width: 50%;
 }
 
 .welcome-text h1 {
@@ -88,7 +91,6 @@
   border-radius: 15px;
   height: auto;
   width: 350px;
-  margin-top: 70px;
   text-align: center;
 }
 
